@@ -47,7 +47,11 @@ class FriendList extends Component {
 
 FriendList.propTypes = {
   friends: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  perPage: PropTypes.number.isRequired,
+  totalCount: PropTypes.number.isRequired,
+  pageClick: PropTypes.func.isRequired
 };
 
 export default FriendList;
