@@ -13,9 +13,12 @@
 :local(.friendInfos span) {
   font-weight: bold;
 }
+:local(.dropdownDisplay) {
+  display: inline;
+}
 
 :local(.friendActions) {
-  flex: 0 0 90px;
+  flex: 0 0 135px;
 }
 
 :local(.btnAction), :local(.btnAction):active, :local(.btnAction):focus, :local(.btnAction):hover {

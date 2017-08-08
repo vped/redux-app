@@ -6,7 +6,7 @@ body {
 }
 
 :local(.friendListApp) {
-  width: 300px;
+  width: 400px;
   padding-top: 18px;
   background-color: #5C75B0;
   border: 1px solid #E3E3E3;

@@ -20,7 +20,7 @@ class AddFriendInput extends Component {
   constructor (props, context) {
     super(props, context);
     this.state = {
-      name: this.props.name || '',
+      name: this.props.name || ''
     };
   }
 
