@@ -19,11 +19,18 @@ class FriendListApp extends Component {
   }
 
   pageClick(pageNumber){
-    this.setState({currentPage:pageNumber})
+    this.setState({currentPage:pageNumber});
   }
 
   componentWillReceiveProps(newProps) {
-    this.setState({ totalCount:newProps.friendlist && newProps.friendlist.friendsById.length})
+
+    let count = newProps.friendlist && newProps.friendlist.friendsById.length;
+
+    if(count < (this.state.currentPage*this.state.perPage)-1){
+      this.setState({currentPage:this.state.currentPage-1});
+    }
+
+    this.setState({ totalCount:count})
   }
 
   getFriends() {

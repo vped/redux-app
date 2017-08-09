@@ -1,5 +1,5 @@
 {
-  "name": "heaven-interview",
+  "name": "interview",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,12 +12,20 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^20.0.4",
+    "jsdom": "^11.1.0",
+    "mocha": "^3.5.0",
+    "react-addons-test-utils": "^15.6.0",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
   }
 }

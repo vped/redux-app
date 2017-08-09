@@ -5,6 +5,7 @@ import styles from './FriendListItem.css';
 class FriendListItem extends Component {
 
   render() {
+    console.log(this.props);
     return (
       <li className={styles.friendListItem}>
         <div className={styles.friendInfos}>
