@@ -26,7 +26,7 @@ class FriendListApp extends Component {
 
     let count = newProps.friendlist && newProps.friendlist.friendsById.length;
 
-    if(count < (this.state.currentPage*this.state.perPage)-1){
+    if(count && count < (this.state.currentPage*this.state.perPage)-1){
       this.setState({currentPage:this.state.currentPage-1});
     }
 
